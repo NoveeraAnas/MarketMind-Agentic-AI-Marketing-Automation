@@ -1,0 +1,23 @@
+                 User
+                   |
+                   |
+              Streamlit UI
+                   |
+           Supervisor Agent
+                   |
+ ┌─────────────────┼─────────────────┐
+ |                 |                 |
+Research       Strategy          Content
+ Agent          Agent             Agent
+                   |
+              Critic Agent
+                   |
+           Instagram Agent
+                   |
+          Human Approval Gate
+                   |
+             Scheduler Agent
+                   |
+              n8n Webhook
+                   |
+             Email Service
