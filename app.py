@@ -353,6 +353,43 @@ code {
 div[data-testid="stAlert"] {
     border-radius: 18px;
 }
+            /* Fix unreadable submit/button states */
+.stButton button,
+.stFormSubmitButton button {
+    background: linear-gradient(135deg, #6D4AFF, #C86FFF, #F69DD5) !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 18px !important;
+    font-weight: 900 !important;
+}
+
+.stButton button:hover,
+.stFormSubmitButton button:hover {
+    background: linear-gradient(135deg, #5B2EFF, #B85CFF, #F69DD5) !important;
+    color: #FFFFFF !important;
+    border: none !important;
+}
+
+/* Fix white boxes / form container readability */
+div[data-testid="stForm"] {
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.32);
+    border-radius: 28px;
+    padding: 28px;
+    backdrop-filter: blur(24px);
+}
+
+/* Fix alert text visibility */
+div[data-testid="stAlert"] * {
+    color: #241642 !important;
+    font-weight: 700 !important;
+}
+
+/* Make code/output blocks readable */
+pre, code {
+    background: #FAF8FF !important;
+    color: #241642 !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
