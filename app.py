@@ -804,7 +804,7 @@ elif page == "Instagram Approval":
                         webhook_url = os.getenv("N8N_WEBHOOK_URL")
 
                         if not webhook_url:
-                            st.error("N8N_WEBHOOK_URL not found in .env file.")
+                            st.warning("n8n automation is available in the local demo environment.")
                         else:
                             payload = {
                                 "type": "instagram_post",
